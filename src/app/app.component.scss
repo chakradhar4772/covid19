@@ -1,0 +1,10 @@
+@import '../styles.scss';
+.demo{
+    @include width_dynamic(70);
+    @include height_dynamic(50);
+    background-color: bisque;
+    margin: $mr-15;
+    padding: $p-10;
+    @include border_dashed(5px,#ccc);
+    @include flex_row(flex-start,flex-end);
+}

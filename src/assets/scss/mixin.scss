@@ -1,0 +1,32 @@
+// for width
+@mixin width_dynamic($width) {
+    width: $width * 1%;
+}
+// for height 
+@mixin height_dynamic($height) {
+    height: $height * 1%;
+}
+// for border solid 
+@mixin border_solid($size,$color) {
+    border: $size solid $color;
+}
+// for border dotted 
+@mixin border_dotted($size,$color) {
+    border: $size dotted $color;
+}
+// for border dashed 
+@mixin border_dashed($size,$color) {
+    border: $size dashed $color;
+}
+@mixin flex_row($h-direction,$v-direction) {
+    display: flex;
+    flex-direction: row;
+    justify-content: $h-direction;
+    align-items: $v-direction;
+}
+@mixin flex_column($h-direction,$v-direction) {
+    display: flex;
+    flex-direction: column;
+    align-items: $h-direction;
+    justify-content: $v-direction;
+}

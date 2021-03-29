@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+@import './assets/scss/variables.scss';
+@import './assets/scss/mixin.scss';
+html{
+   
+    width:$w-100;
+    height:$h-100;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    body{
+        @extend html;
+        background-color:$home-bg;
+    }
+}
